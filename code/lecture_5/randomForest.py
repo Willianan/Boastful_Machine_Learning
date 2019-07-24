@@ -37,7 +37,7 @@ plt.show()
 
 
 # 数据划分
-x_train,x_test,y_train,y_test = func.dividingData(x,y)
+x_train,x_test,y_train,y_test = func.dividingData2(x,y)
 
 
 # ID3决策树算法进行训练
