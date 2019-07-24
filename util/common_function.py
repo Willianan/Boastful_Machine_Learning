@@ -35,6 +35,14 @@ def dividingData(x,y):
 	print(x_train.shape, x_test.shape, y_train.shape, y_test.shape)
 	return x_train, x_test, y_train, y_test
 
+def dividingData2(x,y):
+	# 把x,y转化为数组形式
+	x = np.array(x.values)
+	y = np.array(y.values)
+	# 以25%的数据构建测试样本，其余为训练样本
+	x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=2)
+	print(x_train.shape, x_test.shape, y_train.shape, y_test.shape)
+	return x_train, x_test, y_train, y_test
 
 # 作图函数
 def curveShow(t,y_test,y_hat):
